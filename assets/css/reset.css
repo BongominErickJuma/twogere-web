@@ -1,0 +1,96 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.reset-box {
+  width: 320px;
+  height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.user-box {
+  position: relative;
+  width: 320px;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: #303030;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.user-box label {
+  position: absolute;
+
+  top: 0.75em;
+  left: 0.5em;
+
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus {
+  border: 1px solid #388da8 !important;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  background-color: #fff;
+  color: #388da8;
+  padding: 0.5em;
+  top: -1.25rem;
+  left: 0.5em;
+  font-size: 0.75rem;
+}
+
+.logo {
+  width: 320px;
+  margin-bottom: 2em;
+  /* border: 1px solid red; */
+}
+.logo img {
+  max-width: 100%;
+  display: block;
+}
+
+.passwords,
+.verify-contact-email {
+  display: none;
+}
+.passwords.show,
+.email-section.show,
+.verify-contact-email.show {
+  display: block;
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

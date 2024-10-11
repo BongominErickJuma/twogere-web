@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/signup.css" />
+
+    <title>Twogere Web Signup</title>
+  </head>
+  <body>
+    <div class="signup-box mt-5">
+      <div class="logo">
+        <img src="/assets/images/sphere logo 1.jpg" alt="logo" />
+      </div>
+
+      <form id="institution_signup_form">
+        <div class="institution-profile show">
+          <div class="user-box">
+            <input
+              type="text"
+              name="organisation_name"
+              autofocus
+              required
+              class="border p-2"
+              id="organisation_name"
+            />
+            <label>Organization Name</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              required
+              name="organisation_website"
+              class="border p-2"
+              id="organisation_website"
+            />
+            <label>Organization Website</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              required
+              name="organisation_address"
+              class="border p-2"
+              id="organisation_address"
+            />
+            <label>Organization Address</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              required
+              name="nature_of_business"
+              class="border p-2"
+              id="nature_of_business"
+            />
+            <label>Nature of Organization</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="number"
+              required
+              name="number_of_users"
+              class="border p-2"
+              id="number_of_users"
+            />
+            <label>Number of users</label>
+          </div>
+
+          <p class="institution-error text-danger">All fields are required.</p>
+
+          <p
+            class="btn w-100 py-2 mt-2 text-white institutionBtn"
+            style="background-color: #388da8"
+          >
+            continue
+          </p>
+
+          <p>
+            Already have an account?
+            <a
+              href="/index.html"
+              class="text-decoration-none ms-2"
+              style="color: #388da8"
+              >sign In</a
+            >
+          </p>
+        </div>
+
+        <div class="verify-institution-email">
+          <div class="user-box">
+            <input
+              type="text"
+              name="organisation_email"
+              autofocus
+              required
+              class="border p-2"
+              id="organisation_email"
+            />
+            <label>Organization Email</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              required
+              name="organisation_phone"
+              class="border p-2"
+              id="organisation_phone"
+            />
+            <label>Organization Phone</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              required
+              name="country"
+              class="border p-2"
+              id="country"
+            />
+            <label>Organization Country</label>
+          </div>
+
+          <div class="user-box" hidden>
+            <input
+              type="text"
+              required
+              name="organisation_value"
+              class="border p-2"
+              id="organisation_value"
+              value="organisation"
+            />
+          </div>
+          <div class="user-box" hidden>
+            <input
+              type="text"
+              required
+              name="product"
+              class="border p-2"
+              id="product"
+              value="twogere"
+            />
+          </div>
+
+          <div class="user-box">
+            <input
+              type="text"
+              required
+              name="state"
+              class="border p-2"
+              id="state"
+            />
+            <label>State</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              required
+              name="zip"
+              class="border p-2"
+              id="zip"
+            />
+            <label>Zip</label>
+          </div>
+
+          <p
+            class="btn w-100 py-2 mt-2 text-white institutionOtpBtn"
+            style="background-color: #388da8"
+          >
+            continue
+          </p>
+        </div>
+
+        <div class="contact-person-profile">
+          <h6 class="fw-light mb-4">Contact Person</h6>
+          <div class="user-box">
+            <input
+              type="text"
+              name="name"
+              required
+              autofocus
+              class="border p-2"
+              id="name"
+            />
+            <label>Fullname</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="number"
+              name="phone"
+              required
+              autofocus
+              class="border p-2"
+              id="phone"
+            />
+            <label>Phone</label>
+          </div>
+
+          <div class="user-box">
+            <input
+              type="email"
+              name="email"
+              required
+              autofocus
+              class="border p-2"
+              id="email"
+            />
+            <label>Email</label>
+          </div>
+
+          <div class="user-box">
+            <input
+              type="text"
+              name="role"
+              required
+              autofocus
+              class="border p-2"
+              id="role"
+              value="admin"
+            />
+            <label>Role</label>
+          </div>
+
+          <div class="user-box">
+            <input
+              type="password"
+              name="password"
+              required
+              autofocus
+              class="border p-2"
+              id="password"
+            />
+            <label>Password</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="password"
+              name="confirm_password"
+              required
+              autofocus
+              class="border p-2"
+              id="confirm_password"
+            />
+            <label>Confirm Password</label>
+          </div>
+          <p class="contact-person-error text-danger">
+            All fields are required.
+          </p>
+
+          <p
+            class="btn w-100 py-2 mt-2 text-white contactSubmitBtn"
+            style="background-color: #388da8"
+          >
+            continue
+          </p>
+        </div>
+
+        <div class="verify-contact-email">
+          <div class="row">
+            <p class="col-9 otpError">Enter OTP sent to your email</p>
+            <div
+              class="col-3 d-flex align-items-start justify-content-between back-to-personal-profile"
+              style="color: #388da8; cursor: pointer"
+            ></div>
+          </div>
+
+          <div class="user-box">
+            <input
+              type="text"
+              name="velification_code"
+              id="confirmOtp"
+              required
+              class="border p-2"
+            />
+            <label>Enter OTP</label>
+          </div>
+
+          <p
+            class="btn w-100 py-2 mt-2 text-white otpBtn"
+            style="background-color: #388da8"
+          >
+            continue
+          </p>
+        </div>
+        <div class="finish-registration">
+          <button
+            type="submit"
+            class="btn w-100 py-2 mt-2 text-white finishBtn"
+            style="background-color: #388da8"
+          >
+            Finish Registration
+          </button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/assets/js/signup.js"></script>
+  </body>
+</html>

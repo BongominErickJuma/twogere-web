@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twogere Web</title>
+    <!-- Bootstrap Icons CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="assets/js/protect.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Twogere Web</h1>
+      <div class="controls">
+        <button id="toggle-speaker">
+          <i id="speaker-icon" class="bi bi-volume-up-fill"></i> Speaker: On
+        </button>
+
+        <button class="logout">
+          <i id="logout" class="bi bi-box-arrow-right"></i> Logout
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div id="avatar-container">
+        <video id="avatar-video" width="450" autoplay muted loop>
+          <source src="/assets/videos/avator.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="text-container">
+          <p id="translation-text">
+            Hello, welcome to Twogere Web! This is a sign language translation
+            service where you can interact with an avatar. Feel free to turn on
+            or off the speaker as you need and watch the avatar perform
+            translations.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/assets/js/logout.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.instruction {
+  font-size: 0.75rem;
+}
+.signup-box {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-box {
+  position: relative;
+  width: 320px;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: #303030;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+label {
+  position: absolute;
+
+  top: 0.75em;
+  left: 0.5em;
+
+  pointer-events: none;
+  transition: 0.5s;
+}
+.col label {
+  left: 1.25em;
+}
+
+input:focus {
+  border: 1px solid #388da8 !important;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  background-color: #fff;
+  color: #388da8;
+  padding: 0.5em;
+  top: -1.25rem;
+  left: 0.5em;
+  font-size: 0.75rem;
+}
+
+.logo {
+  width: 320px;
+  margin-bottom: 2em;
+
+  /* border: 1px solid red; */
+}
+.logo img {
+  max-width: 100%;
+  display: block;
+}
+
+/* institutions */
+.verify-contact-email,
+.contact-person-profile,
+.contact-person-profile .contact-person-error,
+.verify-institution-email,
+.institution-profile,
+.finish-registration,
+.institution-profile .institution-error {
+  display: none;
+}
+
+/* institutiions */
+.verify-contact-email.show,
+.finish-registration.show,
+.contact-person-profile.show,
+.contact-person-profile.show-error .contact-person-error,
+.verify-institution-email.show,
+.institution-profile.show,
+.institution-profile.show-error .institution-error {
+  display: block;
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* tabs */
+.nav-tabs-bordered {
+  border-bottom: 2px solid #ebeef4;
+}
+
+.nav-tabs-bordered .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #2c384e;
+}
+
+.nav-tabs-bordered .nav-link:hover,
+.nav-tabs-bordered .nav-link:focus {
+  color: #388da8;
+}
+
+.nav-tabs-bordered .nav-link.active {
+  background-color: #fff;
+  color: #388da8;
+  border-bottom: 2px solid #388da8;
+}
